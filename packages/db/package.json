@@ -5,9 +5,12 @@
   "private": true,
   "devDependencies": {
     "@types/bun": "latest",
-    "prisma": "^8.0.0-rc.20"
+    "prisma": "8.0.0-rc.22"
   },
   "peerDependencies": {
     "typescript": "^7"
+  },
+  "scripts": {
+    "postinstall": "prisma skills sync || exit 0"
   }
 }
